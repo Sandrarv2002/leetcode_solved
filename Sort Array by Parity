@@ -1,0 +1,11 @@
+class Solution:
+    def sortArrayByParity(self, nums: list[int]) -> list[int]:
+        li = []  
+        for i in nums:
+            if i % 2 == 0:
+                li.append(i)
+        for i in nums:
+            if i % 2 != 0:
+                li.append(i)
+        
+        return li  
